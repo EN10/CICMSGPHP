@@ -22,9 +22,9 @@ body {color:blue;font-family:arial;text-align:center;}
 <?php
 session_start();
 
-$con = mysql_connect("mysql3.000webhost.com","a3052038_cic","xyz123");
+$con = mysql_connect("","","");
 if (!$con) die('Could not connect: ' . mysql_error());
-mysql_select_db("a3052038_login", $con);
+mysql_select_db("", $con);
 $un = mysql_real_escape_string($_POST['username']);
 $userSearch = mysql_query("SELECT * FROM users WHERE username = '$un'");
 
