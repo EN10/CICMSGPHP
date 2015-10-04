@@ -1,0 +1,66 @@
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title> CIC Messenger </title>
+<style type="text/css">
+body {color:orange;font-family:arial;text-align:center;}
+</style>
+</head>
+
+<body>
+<table align="center" vspace="60" width="637" border="0" cellpadding="0" cellspacing="0">
+<tr>
+  <th colspan="2" scope="row"><table width="637" border="1">
+    <tr>
+      <th colspan="2" scope="col"><a href="index.htm"><img src="images/Header.png" width="253" height="67" /></th>
+    </tr>
+    <tr>
+      <th colspan="2" align="left" valign="middle" scope="row"><p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+	<script type="text/javascript">
+	function validate(theform)
+	{ if (theform.username==null || theform.username.value=="")
+	    {	    alert("ERROR: Please enter Username"); return false;	}
+	    else if (theform.password==null || theform.password.value=="")
+	    {	    alert("ERROR: Please enter Password"); return false;	}  
+	    else
+	    {	return true;	}
+	}
+	</script>
+
+        <form action="signIn.php" onsubmit="return validate(this)" method="post">
+        <table width="200" border="0" align="center" cellpadding="0">
+          <tr>
+          <td class="Login"><b>Username:</td>
+          <td colspan="2"><span class="Login">
+            <input type="text" name="username" />
+          </span></td>
+        </tr>
+        <tr>
+          <td class="Login"><b>Password:</td>
+          <td colspan="2"><span class="Login">
+            <input type="password" name="password" />
+          </span></td>
+        </tr>
+        <tr>
+          <td class="Login">&nbsp;</td>
+          <td><span class="Login">
+            <input type='submit' value='Sign In'/>
+          </span></td>
+          <td><span class="Login"><a href="signUp.htm">Sign Up</a></span></td>
+        </tr>
+        </table>
+        </form>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p></th>
+    </tr>
+    <tr>
+      <th colspan="2" scope="row"><img src="images/Footer.jpg" width="524" height="77" /></th>
+    </tr>
+  </table></th>
+</tr>
+</table>
+</body>
+</html>
+	
