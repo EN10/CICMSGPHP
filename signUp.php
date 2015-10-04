@@ -20,10 +20,10 @@ body {color:orange;font-family:arial;}
         <p>&nbsp;</p>
 <div style = "text-align:center;">
 <?php
-if ($_POST[invite] == "cic2011") 
-{	$con = mysql_connect("mysql3.000webhost.com","a3052038_cic","xyz123");
+if ($_POST[invite] == "") 
+{	$con = mysql_connect("","","");
 	if (!$con) die('Could not connect: ' . mysql_error());
-	mysql_select_db("a3052038_login", $con);
+	mysql_select_db("", $con);
 	$un =  mysql_real_escape_string($_POST[username]);
 	$result = mysql_query("SELECT * FROM users WHERE username = '$un'");
 		$exists="no";
